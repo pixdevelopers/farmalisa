@@ -7,15 +7,12 @@
                 <thead>
                     <tr>
                         <th>Product Name</th>
-                        <th>Availability</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="item in company.products track by $index ">
                         <td>{{item}}</td>
-                        <td>
-                            <i class="fa fa-check" aria-hidden="true "></i>
-                        </td>
+
                     </tr>
                 </tbody>
             </table>
