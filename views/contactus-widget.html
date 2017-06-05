@@ -1,0 +1,79 @@
+<section class="home-contact" ng-controller="contactFormCtrl">
+    <div class="bg"></div>
+    <div class="container">
+        <h2 class="home-heading">Contact Us</h2>
+        <div class="col-lg-10 col-lg-push-1">
+            <div class="row row-flex">
+                <div class="col-xs-12 col-lg-6 pull-left col-flex">
+                    <div class="contact-block">
+                        <div class="contact-form">
+                            <form id="contactFrom" ng-submit="submit(contactForm)" name="contactFrom" method="post" action="" novalidate>
+                                <div class="form-group">
+                                    <input class="form-control" name="name" ng-model="name" type="text" placeholder="Name" required="required">
+                                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                                    <p class="form-error-message" ng-show="contactFrom.name.$touched && contactFrom.name.$pristine">The name is required.</p>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" name="email" ng-model="email" type="email" placeholder="Email Address" required="required">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <p class="form-error-message" ng-show="contactFrom.email.$touched && contactFrom.email.$pristine">The Email is required.</p>
+                                    <p class="form-error-message" ng-show="contactFrom.email.$dirty && contactFrom.email.$invalid">Please enter a valid Email address</p>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" ng-model="message" placeholder="Your Message" required="required"></textarea>
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <p class="form-error-message" ng-show="contactFrom.message.$touched && contactFrom.message.$pristine">Please include a message</p>
+                                </div>
+                                <div class="form-group">
+                                    <button  ng-disabled="contactFrom.$invalid || submitted" class="btn btn-send-msg" type="submit">Send Message</button>
+                                    <p class="form-success-message" ng-show="submitted && status">Your message has been successfully sent</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6 pull-right col-flex">
+                    <div class="contact-block">
+                        <div class="contact-info">
+                            <h3 class="grn info-title">Contact Info</h3>
+                            <div class="info-row">
+                                <i class="fa fa-phone grn" aria-hidden="true"></i>
+                                <span class="grn">Phone/Fax:</span>
+                                <span>+90 (212) 438 7120</span>
+                            </div>
+                            <div class="info-row">
+                                <i class="fa fa-phone grn" aria-hidden="true"></i>
+                                <span class="grn">Cellphone:</span>
+                                <span>+90 534 393 4120</span>
+                            </div>
+                            <div class="info-row">
+                                <i class="fa fa-envelope-o grn" aria-hidden="true"></i>
+                                <span class="grn">E-mail:</span>
+                                <span>info@farmalisa.com</span>
+                            </div>
+                            <div class="info-row">
+                                <i class="fa fa-map-marker grn" aria-hidden="true"></i>
+                                <span class="grn">Address:</span>
+                                <span>OrucreisMah.,Vadi Cd., No: 142/A, GiyimkentSitesi., Esenler, 34235, Istanbul, T端rkiye</span>
+                            </div>
+                            <div class="info-row">
+                                <ul class="social-icons">
+                                    <li>
+                                        <a href="http://www.facebook.com/farmaliza"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/farshid-jahangiri-20732278/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:info@farmalisa.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</section>

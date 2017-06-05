@@ -1,0 +1,77 @@
+<section class="home-banner">
+    <div class="container text-center">
+        <h1 class="main-heading">We are your strategic partner <br>For the globalization of health!</h1>
+        <span class="slogan">experienced team with more than 10 years experiences in the pharmaceutical market</span>
+        <div class="clearfix"></div>
+        <a href="aboutus" class="top-cta">
+            <span>Learn More</span> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+    </div>
+</section>
+<section class="home-services">
+    <div class="container-1400">
+        <h2 class="home-heading">our services</h2>
+        <div class="row">
+            <div class="col-lg-10 col-lg-push-1">
+                <div class="col-xs-12 col-sm-6 col-md-4 text-center service-item" ng-repeat="service in services">
+                    <div class="item-icon">
+                        <img src="images/item{{$index+1}}.png" alt="Farmalisa">
+                    </div>
+                    <h4 class="item-title"><a href="/services/{{service.page}}">{{service.title}}</a></h4>
+                    <p class="item-desc">{{service.desc}}</p>
+                    <a href="/services/{{service.page}}" class="item-read-more">
+                        <span>Read More</span> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="home-who-we-are">
+    <div class="container">
+        <h2 class="home-heading">Who We Are</h2>
+        <div class="col-lg-10 col-lg-push-1">
+            <div class="row">
+                <p class="block-content">Farmalisa has established by an experienced team having more than 10 years experiences in the pharmaceutical market and is a fast growing company in the international market by having a pharma wholesaler company in Turkey (named ilkayeczadeposu), offices in Istanbul and Tehran. (Associates in Ukraine, Romania, Bosnia, Slovenia, Bulgaria will come soon).
+                    <br>
+                    <br> We happily invite you to visit our facility and warehouse in Istanbul where equipped well to store sensitive pharmaceutical products and it would be our pleasure to be in contact with you to negotiate about possible cooperation. As a registered pharmaceutical company we are ready to offer our services including:
+                    <br>&bull;&nbsp; Exporting branded medicines available in Turkey, Europe, India, North America, …
+                    <br>&bull;&nbsp; Exporting generic and local Turkish medicines
+                    <br>&bull;&nbsp; Introducing and selling your products in Markets we have office.
+                    <br>&bull;&nbsp; Trading chemicals, cosmetics and food products.
+                    <br>&bull;&nbsp; Transiting goods and sourcing your needs. Everything you expect from your strategic partner.
+                    <br>Our staffs are experienced in international business and speak English, Turkish, Farsi, Azeri and French.
+                </p>
+            </div>
+            <div class="row">
+                <div class="block-item col-xs-12 col-md-6">
+                    <h5 class="block-item-title">Mission</h5>
+                    <p class="block-excerpt">Demand and supply in the healthcare market is not distributed uniformly because of variety of policies, pricing, population and disease in different countries. Our mission is ...</p>
+                    <a class="block-read-more pull-right" href="aboutus#mission">Read More  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="block-item col-xs-12 col-md-6">
+                    <h5 class="block-item-title">Vision</h5>
+                    <p class="block-excerpt">Our vision is having strategic partners in the whole world. Then not any health product will remain unknown and not any patient will be worry of availability of medicine.</p>
+                    <a class="block-read-more pull-right" href="aboutus#vision">Read More  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="block-item col-xs-12 col-md-6">
+                    <h5 class="block-item-title">Our Suppliers</h5>
+                    <p class="block-excerpt">
+                        &bull;&nbsp; Turkish manufacturers such as Kocak, Abdi Ibrahim, …
+                        <br>&bull;&nbsp; Turkish biggest distributors like Hedef, Selcuk, …
+                        <br>&bull;&nbsp; Other well-known pharmaceutical wholesalers world wide</p>
+                    <a class="block-read-more pull-right" href="aboutus#suppliers">Read More  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="block-item col-xs-12 col-md-6">
+                    <h5 class="block-item-title">Our Facilites</h5>
+                    <p class="block-excerpt">Warehouse: we have 300 m2 storing area located in the business part of European part of Istanbul near to Ataturk airport equipped by all necessary equipment for storing pharmaceuticals ...</p>
+                    <a class="block-read-more pull-right" href="aboutus#facilities">Read More  <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<div ng-include="'views/contactus-widget.html'"></div>

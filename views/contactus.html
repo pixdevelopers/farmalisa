@@ -1,0 +1,31 @@
+<div class="contactuspage">
+    <div class="contactimage">
+        <h2>We're Here to Help!</h2>
+        <h3>We're friendly and available to chat. Reach out us anytime and we'll happily answer your questions.</h3>
+    </div>
+    <div class="container">
+        <p>
+            Our customer support and account management teams provide the best servise in the industry. We're passionate about our products as well as our customers and it shows in the level of service that we provide. We're always happy to help find the solution for your needs. if a solution doesn't already exist, we'll create a new solution that resolves your issue.
+        </p>
+        <h4>Get in touch! We'd love to hear from you.</h4>
+    </div>
+</div>
+<div ng-include="'views/contactus-widget.html'"></div>
+    <div id="map"></div>
+    <script>
+    function initMap() {
+        var uluru = {
+            lat: 41.073386,
+            lng: 28.870418
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd7Hn7tVU4htgmp_jfbhK4oCyCOrmHMLE&callback=initMap"></script>
