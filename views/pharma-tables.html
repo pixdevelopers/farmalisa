@@ -1,0 +1,28 @@
+<div class="products" ng-controller="pharmaCtrl">
+    <div class="container">
+        <h2 class="product-title">Some Products Which Can Be Offered By Us And There Are More</h2>
+        <div class="company" ng-repeat="company in companies.company">
+            <img src="images/{{company.logo}}" class="company-img" alt="Farmalisa | {{company.name}}" title="Farmalisa | {{company.name}}" />
+            <table class="table table-striped table-bordered datatable" cellspacing="0" width="100%" ">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in company.products track by $index ">
+                        <td>{{item}}</td>
+                        <td>
+                            <i class="fa fa-check" aria-hidden="true "></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+<div ng-include=" 'views/contactus-widget.html' "></div>
+<script src="bower_components/datatables.net/js/jquery.dataTables.min.js "></script>
+<script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js "></script>

@@ -30,7 +30,11 @@
                        templateUrl: function(parameters) {
                            return 'views/' + parameters.page + '.html';
                        }
-                   });
+                   })
+
+               .otherwise({
+                   redirectTo: '/404'
+               });
            })
 
        .controller('homeCtrl', function($scope, $routeParams) {
@@ -76,6 +80,24 @@
                    .then(function(response) {
                        $scope.companies = response.data;
                    });
-           });
 
+           })
+           .controller('pharmaCtrl', function($scope, $http, $timeout) {
+
+               $timeout(function() {
+                   $('.datatable').DataTable({
+                      ordering: true,
+                      select: true
+                   });
+               }, 500);
+
+               $scope.companies = [];
+               $http.get('data/companies.json')
+                   .then(function(response) {
+                       $scope.companies = response.data;
+                   });
+
+
+
+           });
    })();
