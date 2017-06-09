@@ -60,6 +60,7 @@ $content = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http
 </html>
 ';
 
+if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])){
     $content = str_replace('**name**',$_POST['name'],$content);
     $content = str_replace('**email**',$_POST['email'],$content);
     $content = str_replace('**message**',$_POST['message'],$content);
@@ -85,3 +86,6 @@ else{
 $data = true;
         echo json_encode($data);
 }
+}
+else    header( 'Location: /') ;
+
