@@ -69,7 +69,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])){
     $mail->CharSet = 'UTF-8';
     $mail->From = $_POST['email'];
     $mail->FromName = 'Farmalisa Support';
-    $mail->AddAddress('info@farmalisa.com');
+    $mail->AddAddress('psikopat.mamo@gmail.com');
     $mail->isHTML(true);
     $mail->Subject = 'You have a new message';
     $mail->addReplyTo($_POST['email'], $_POST['name']);
