@@ -1,5 +1,8 @@
 # README #
 
+* Getting Started
+Clone Repository and run `bower install`
+
 * ### Use Koala for Style Sheets. ###
 Load "/sass/main.scss" then compile and set output to "/stylesheet/main.css"
 
