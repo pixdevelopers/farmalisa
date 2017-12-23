@@ -1,0 +1,15 @@
+<div class="products" ng-controller="productCtrl">
+    <div class="container">
+        <h2 class="product-title">Some Products Which Can Be Offered By Us And There Are More</h2>
+        <div class="company" ng-repeat="company in companies.company">
+            <img src="images/{{company.logo}}" class="company-img" alt="Farmalisa | {{company.name}}" title="Farmalisa | {{company.name}}" />
+            <ul class="product-list">
+                <li ng-repeat="item in company.products track by $index">
+                    {{item}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div ng-include="'views/contactus-widget.html'"></div>
