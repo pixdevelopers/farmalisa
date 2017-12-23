@@ -1,6 +1,6 @@
 # README #
 
-* Getting Started
+* ### Getting Started ###
 Clone Repository and run `bower install`
 
 * ### Use Koala for Style Sheets. ###
